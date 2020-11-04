@@ -29,6 +29,16 @@ public class HelloController {
 	{
 		return "Hello " + idName + " - Printed on ("+ t + ")";
 	}
+	@GetMapping("/rest/employee/get/{id}")
+	public String getEmployeeByID(@PathVariable("id") String id) {
+		return (id);
+	}
+//	public int employee (@RequestBody Employee employeeDetails) {
+//		System.out.println(employeeDetails.getFirstName());
+//		return(0);
+		
+	
+	
 //	Post Service
 	@PostMapping("/api/employees")
 	public int saveEmployee (@RequestBody Employee employeeDetails) {

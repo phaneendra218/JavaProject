@@ -14,6 +14,7 @@ public class Employee {
 //	private String[] contactDetails;
 	private String empRole;
 	private Double salary;
+	private String bloodgroup;
 	
 	public String getEmployeeId() {
 		return employeeId;
@@ -58,7 +59,11 @@ public class Employee {
 		this.address = address;
 	}
 	private String[] contactDetails;
-	
+	//newly added
+	public String name;
+	public String ssn;
+	public String emailAddress;
+	//newly added
 	public String[] getContactDetails() {
 		return contactDetails;
 	}
@@ -76,6 +81,12 @@ public class Employee {
 	}
 	public void setSalary(Double salary) {
 		this.salary = salary;
+	}
+	public String getBloodgroup() {
+		return bloodgroup;
+	}
+	public void setBloodgroup(String bloodgroup) {
+		this.bloodgroup = bloodgroup;
 	}
 		
 }
